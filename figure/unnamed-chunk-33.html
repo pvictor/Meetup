@@ -1,0 +1,959 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href='http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.css'>
+    
+    <script src='http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js' type='text/javascript'></script>
+    <script src='https://rawgithub.com/leaflet-extras/leaflet-providers/gh-pages/leaflet-providers.js' type='text/javascript'></script>
+    <script src='http://harrywood.co.uk/maps/examples/leaflet/leaflet-plugins/layer/vector/KML.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }  
+    </style>
+    
+  </head>
+  <body>
+    <div id='chart2d0417a3ccc' class='rChart leaflet'></div>  
+    
+    <script>
+  var spec = {
+ "dom": "chart2d0417a3ccc",
+"width":            800,
+"height":            400,
+"urlTemplate": "http://{s}.tile.osm.org/{z}/{x}/{y}.png",
+"layerOpts": {
+ "attribution": "Map data<a href=\"http://openstreetmap.org\">OpenStreetMap</a>\n         contributors, Imagery<a href=\"http://mapbox.com\">MapBox</a>" 
+},
+"center": [       48.85749,       2.347553 ],
+"zoom":             14,
+"id": "chart2d0417a3ccc" 
+}
+
+  var map = L.map(spec.dom, spec.mapOpts)
+  
+    map.setView(spec.center, spec.zoom);
+
+    if (spec.provider){
+      L.tileLayer.provider(spec.provider).addTo(map)    
+    } else {
+		  L.tileLayer(spec.urlTemplate, spec.layerOpts).addTo(map)
+    }
+     
+    L
+  .marker([
+  48.87,
+2.3483 
+])
+  .addTo( map )
+  .bindPopup("Municipales à #Paris : toujours pas de #NKM en vue au QG")
+L
+  .marker([
+ 48.856,
+2.3524 
+])
+  .addTo( map )
+  .bindPopup("Merci Paris ! #hidalgo #municipales #paris @ Hôtel de Ville de Paris")
+L
+  .marker([
+ 48.882,
+2.3282 
+])
+  .addTo( map )
+  .bindPopup("Municipales terminées ! Bravo special @jbgernet et @tdelahaye ! #AuBoulot")
+L
+  .marker([
+ 48.833,
+2.3268 
+])
+  .addTo( map )
+  .bindPopup("Soirée des municipales paris 14eme !!")
+L
+  .marker([
+  48.87,
+2.3163 
+])
+  .addTo( map )
+  .bindPopup("EN DIRECT Hidalgo dit Merci Paris sur #Twitter")
+L
+  .marker([
+ 48.855,
+2.3518 
+])
+  .addTo( map )
+  .bindPopup("#Hidalgo pour six ans ! On continue le boulot ;-) #Paris #municipales @ Paris")
+L
+  .marker([
+  48.87,
+2.3163 
+])
+  .addTo( map )
+  .bindPopup("#Strasbourg Roland Ries (PS-EELV) 47,2 %, Fabienne Keller (UMP-MoDem-UDI) 44,3% Jean-Luc Schaffhauser (FN) 8,5%")
+L
+  .marker([
+ 48.852,
+2.3188 
+])
+  .addTo( map )
+  .bindPopup("Bruno Le Maire s'exprime sur les municipales. C'est sa cousine Brunette La Tepu qui s'exprimera pour les Européennes.")
+L
+  .marker([
+ 48.856,
+2.3592 
+])
+  .addTo( map )
+  .bindPopup("YESSSS !!!! ALERTE MUNICIPALES PARIS Anne Hidalgo élue avec  54,50 des voix selon les premières estimations (IFOP SAS iTélé)")
+L
+  .marker([
+ 48.847,
+2.3424 
+])
+  .addTo( map )
+  .bindPopup("Les plus curieux des municipales ce soir? Des touristes espagnols! @paris5sur5  #mun75005")
+L
+  .marker([
+ 48.884,
+2.3367 
+])
+  .addTo( map )
+  .bindPopup("Pensée pour Didier Mathus et les socialistes de #Montceau les Mines #municipales #71")
+L
+  .marker([
+ 48.892,
+2.3493 
+])
+  .addTo( map )
+  .bindPopup("J'ai accompli mon devoir civique pour les municipales de Paname, a voté ! @ paris XVIII")
+L
+  .marker([
+ 48.829,
+2.3265 
+])
+  .addTo( map )
+  .bindPopup("RT @le_Parisien Rapport de force national : Gauche 42% Droite 49% FN 9% Exclu BVA @le_Parisien")
+L
+  .marker([
+ 48.829,
+2.3265 
+])
+  .addTo( map )
+  .bindPopup("Ha! RT @paris_normandie Les premières images de la victoire de Daniel Fidelin à Montivilliers")
+L
+  .marker([
+ 48.874,
+2.3141 
+])
+  .addTo( map )
+  .bindPopup("Élections municipales en#France: vague bleue, mais recul du#FrontNational par rapport au premier tour.De toute façon: gifle pr socialistes")
+L
+  .marker([
+ 48.829,
+2.3265 
+])
+  .addTo( map )
+  .bindPopup("RT @le_Parisien #Municipales2014 : large victoire de la droite, revers confirmé pour la gauche")
+L
+  .marker([
+ 48.852,
+2.3652 
+])
+  .addTo( map )
+  .bindPopup("Philippot pas élu, Alliot non plus #yay #municipales")
+L
+  .marker([
+ 48.876,
+2.3225 
+])
+  .addTo( map )
+  .bindPopup("Dépouillage municipales (@ Lycée Racine")
+L
+  .marker([
+ 48.888,
+2.3491 
+])
+  .addTo( map )
+  .bindPopup("L'abstention au second tour des municipales est estimé à 38,5%... Wesh la semaine dernière yavait le clasico mais là y'a pas d'excuses !")
+L
+  .marker([
+ 48.865,
+2.3205 
+])
+  .addTo( map )
+  .bindPopup("À quelques heures des résultats des élections municipales, l'Assemblée Nationale bouclée par les forces de l'ordre.")
+L
+  .marker([
+  48.83,
+2.3319 
+])
+  .addTo( map )
+  .bindPopup("Bonjour, Je vous invite à découvrir l'article EN DIRECT. Municipales: le taux de participation à 17 heu... ")
+L
+  .marker([
+ 48.856,
+ 2.368 
+])
+  .addTo( map )
+  .bindPopup("Sinon à cause des municipales je vois pas le match ! Alors qu'il a l'air juste génial ... #srfc")
+L
+  .marker([
+ 48.839,
+2.3228 
+])
+  .addTo( map )
+  .bindPopup("Ils n'arrêtent pas à m'envoyer des texto sur Municipales 2014. Je n'ai rien à foutre leur politique et leur Municipales")
+L
+  .marker([
+ 48.864,
+2.3464 
+])
+  .addTo( map )
+  .bindPopup("#municipales. Le système des triangulaires est absurde ! Seuls les deux premiers candidats ou listes devraient pouvoir se maintenir.")
+L
+  .marker([
+ 48.881,
+2.3529 
+])
+  .addTo( map )
+  .bindPopup("Où sont passés les ouvriers qui votaient PC ? Tiens, au fait... En 1983, aux municipales, l'extrême droite faisait 0,1% des voix. B. MARIS")
+L
+  .marker([
+ 48.868,
+2.3389 
+])
+  .addTo( map )
+  .bindPopup("Municipales 2014 second tour #paris #municipales #picoftheday #droitdevote #instadaily #igersparis")
+L
+  .marker([
+ 48.859,
+2.3095 
+])
+  .addTo( map )
+  .bindPopup("Quand PY oublie que les électeurs ont des droits même à Avignon où le festival lui survivra ds tous les cas")
+L
+  .marker([
+ 48.883,
+2.3756 
+])
+  .addTo( map )
+  .bindPopup("Eliminer les socialistes par les municipales ne suffira pas. Il faut dissoudre l'assemblée.")
+L
+  .marker([
+  48.87,
+2.3163 
+])
+  .addTo( map )
+  .bindPopup("Municipales : les #socialistes craignent une débâcle électorale")
+L
+  .marker([
+ 48.873,
+2.3374 
+])
+  .addTo( map )
+  .bindPopup("#Sarkozy a confié à des proches qu'une amplification défaite PS au 2è tour est inévitable. À lire dans Figaro.fr #Municipales")
+L
+  .marker([
+ 48.831,
+2.3697 
+])
+  .addTo( map )
+  .bindPopup("C'est parti pour le #RingSudRadio pour parler des enjeux du second tour des municipales ! 99.9FM")
+L
+  .marker([
+ 48.855,
+2.3357 
+])
+  .addTo( map )
+  .bindPopup("@G_Daubigny: Mensonge du train raté de Taubira : les socialistes ne voulaient en fait pas  d'elle ...")
+L
+  .marker([
+ 48.855,
+2.3357 
+])
+  .addTo( map )
+  .bindPopup("@fredsoftway: Municipales : les socialistes n'y croient plus Amen ....")
+L
+  .marker([
+ 48.829,
+2.3316 
+])
+  .addTo( map )
+  .bindPopup("Après les municipales #Hollande doit dissoudre l'Assemblée nationale #DPDA")
+L
+  .marker([
+ 48.839,
+2.3575 
+])
+  .addTo( map )
+  .bindPopup("@LaurenceHugues et @JGleizes au meeting de la gauche rassemblée pour les municipales @EELV_Paris #lacampagnecontinue")
+L
+  .marker([
+ 48.847,
+2.3185 
+])
+  .addTo( map )
+  .bindPopup("NE VOTEZ PAS... Mais pour MOI ! #LePartiDesAbstentionnistes #Municipales @ Hôtel Mayet")
+L
+  .marker([
+  48.87,
+2.3163 
+])
+  .addTo( map )
+  .bindPopup("#Municipales : la carte des 100 villes qui pourraient basculer à droite")
+L
+  .marker([
+  48.87,
+2.3163 
+])
+  .addTo( map )
+  .bindPopup("Municipales à Paris : les approximations d'Anne Hidalgo sur les lignes de métro")
+L
+  .marker([
+  48.87,
+2.3163 
+])
+  .addTo( map )
+  .bindPopup("Fillon : #Hollande doit se remanier lui-même")
+L
+  .marker([
+ 48.859,
+2.3488 
+])
+  .addTo( map )
+  .bindPopup("@lemondefr: Municipales à Paris : le débat inaudible entre Anne Hidalgo et Nathalie Kosciusko-Morizet")
+L
+  .marker([
+ 48.874,
+2.3525 
+])
+  .addTo( map )
+  .bindPopup("@AnneHidalgo  vous parlez de bidouillages. Comment expliquez-vous les 88000 radiations d'électeurs à Paris avant les municipales ? Cc @nk_m")
+L
+  .marker([
+ 48.891,
+2.3386 
+])
+  .addTo( map )
+  .bindPopup("@IanBrossat: Merci à @BertrandDelanoe qui apporte son soutien à Jacqueline Rouillon (Front de Gauche) à Saint-Ouen")
+L
+  .marker([
+  48.87,
+2.3163 
+])
+  .addTo( map )
+  .bindPopup("#PARISledebat Vrai ou faux ? Paris devant Londres en création de start-ups. Fact-checking")
+L
+  .marker([
+ 48.869,
+2.3622 
+])
+  .addTo( map )
+  .bindPopup("Avec les municipales ont à l'impression que Paris c'est nul et que ca va devenir fou. Quand on voit le temps qu'il faut pour voter une loi..")
+L
+  .marker([
+ 48.879,
+ 2.372 
+])
+  .addTo( map )
+  .bindPopup("Le soutien de Bertrand Delanoe à Jacqueline Rouillon la maire de Saint-Ouen")
+L
+  .marker([
+ 48.865,
+2.3497 
+])
+  .addTo( map )
+  .bindPopup("Boulette UMP à Paris 12e : F.Margain dézingue NKM (via @metronews) #mun75012 #Municipales2014")
+L
+  .marker([
+ 48.828,
+2.3413 
+])
+  .addTo( map )
+  .bindPopup("#municipales#serris si j'ai bien lu Freud:les hoes politiques c'est 5 ans de droit et le reste de travers.Au lieu de faire bloc pr gagner")
+L
+  .marker([
+ 48.888,
+2.3608 
+])
+  .addTo( map )
+  .bindPopup("# élections municipales paris crainte de la nouvelle alliance . Après les avoir chassées de paris ils parlent de soigner les classes moy.")
+L
+  .marker([
+ 48.876,
+2.3472 
+])
+  .addTo( map )
+  .bindPopup("@ParisMatch: Municipales à Paris - Tiberi s'entend avec NKM c'est moche")
+L
+  .marker([
+ 48.832,
+2.3602 
+])
+  .addTo( map )
+  .bindPopup("@nk_m: Lettre ouverte à un ami écologiste #Paris2014”")
+L
+  .marker([
+  48.89,
+ 2.354 
+])
+  .addTo( map )
+  .bindPopup("Grace au trio improbable de Chateauroux, Bottemine-Tellier-Clement ont passe des municipales aux minicipales !")
+L
+  .marker([
+  48.89,
+ 2.354 
+])
+  .addTo( map )
+  .bindPopup("L'attelage baroque du 2 em tour des municipales à Châteauroux évoqué dans le journal Le Monde de demain. Incohérence et manoeuvre signalés")
+L
+  .marker([
+ 48.877,
+2.3744 
+])
+  .addTo( map )
+  .bindPopup("Municipales 2014 - NKM : l'accord PS-Verts est un attentat contre l'écologie #LesCopainsdabord")
+L
+  .marker([
+  48.86,
+2.3535 
+])
+  .addTo( map )
+  .bindPopup("C Boutin imprévisible alliée d' A Hidalgo aux municipales. Elle est vent debout contre NKM.")
+L
+  .marker([
+ 48.854,
+2.3283 
+])
+  .addTo( map )
+  .bindPopup("Prenez une pause des élections municipales - suivez les préparations des élections présidentielles afghanes")
+L
+  .marker([
+  48.87,
+2.3163 
+])
+  .addTo( map )
+  .bindPopup("EN DIRECT Quand Ayrault réclamait un vote sanction sur #Twitter")
+L
+  .marker([
+ 48.867,
+2.3449 
+])
+  .addTo( map )
+  .bindPopup("#Municipales : pour #NKM les #Tiberi redeviennent fréquentables")
+L
+  .marker([
+ 48.871,
+ 2.317 
+])
+  .addTo( map )
+  .bindPopup("François Hollande reçoit à l'Elysée Jean-Pierre Bel, le président du Sénat. #françoishollande #municipales")
+L
+  .marker([
+ 48.872,
+2.3643 
+])
+  .addTo( map )
+  .bindPopup("RT @carolinedescham: Les scores des candidats aux municipales ayant utilisé Happy de Ph. Williams pour faire campagne")
+L
+  .marker([
+ 48.889,
+2.3321 
+])
+  .addTo( map )
+  .bindPopup("La reconquête est là! Pour une analyse fine et racée des #Municipales 2014 retrouvez nous sur Dimanche à 19:30")
+L
+  .marker([
+  48.87,
+2.3163 
+])
+  .addTo( map )
+  .bindPopup("#Municipales: ni alliance avec le FN ni avec le PS pour l'UMP")
+L
+  .marker([
+ 48.873,
+2.3585 
+])
+  .addTo( map )
+  .bindPopup("le velib la nuit ça roule mal comme les municipales 16  stations fermées  Pigalle a republique @nk_m @Anne_Hidalgo")
+L
+  .marker([
+  48.87,
+2.3163 
+])
+  .addTo( map )
+  .bindPopup("#Municipales2014 : En coulisses, certains au PS reconnaissent une déculottée")
+L
+  .marker([
+ 48.831,
+2.3356 
+])
+  .addTo( map )
+  .bindPopup("Ces municipales m'énervent la France m'énerve je vais dormir #lameuftropvenere")
+L
+  .marker([
+  48.87,
+2.3163 
+])
+  .addTo( map )
+  .bindPopup("EN DIRECT - Municipales: à Marseille, Diouf refuse de s'allier avec Mennucci")
+L
+  .marker([
+ 48.825,
+2.3701 
+])
+  .addTo( map )
+  .bindPopup("Peu m'importe les résultats des municipales que FH remanie son gvt et suive son cap. Rien à en tirer à Gooooooooche!!!")
+L
+  .marker([
+  48.87,
+2.3163 
+])
+  .addTo( map )
+  .bindPopup("Les abstentionnistes sont-ils des protestataires, des je-m'en-foutiste ou des irresponsables ?")
+L
+  .marker([
+ 48.877,
+2.3266 
+])
+  .addTo( map )
+  .bindPopup("A vendre festival, offert SDF+clebs @VilleAvignon: Si le FN passe à Avignon, le Festival partira")
+L
+  .marker([
+ 48.893,
+2.3556 
+])
+  .addTo( map )
+  .bindPopup("#municipales Mélenchon tape dur sur un PS arrogant qui s'est pris une raclée #France2014 #AFP")
+L
+  .marker([
+ 48.885,
+2.3738 
+])
+  .addTo( map )
+  .bindPopup("#SaarLorLux RT @lemondefr : Le FN en passe de réussir son implantation dans l'Est")
+L
+  .marker([
+ 48.876,
+  2.38 
+])
+  .addTo( map )
+  .bindPopup("Ça faisait longtemps #Racisme : sur #Facebook,1 élue de l'#UMP compare Christiane #Taubira à un singe #municipales")
+L
+  .marker([
+ 48.855,
+2.3268 
+])
+  .addTo( map )
+  .bindPopup("@Anne_Hidalgo  20 points derrière dans le 15e #martyrsdeBuffon  #CHA")
+L
+  .marker([
+  48.87,
+2.3163 
+])
+  .addTo( map )
+  .bindPopup("#Municipales - A #Bordeaux , Juppé triomphe avec 59,66% des voix")
+L
+  .marker([
+ 48.875,
+2.3177 
+])
+  .addTo( map )
+  .bindPopup("C'est pas les résultats des élections municipales qui me donneront envie de voter...")
+L
+  .marker([
+  48.87,
+2.3163 
+])
+  .addTo( map )
+  .bindPopup("Municipales: Rebsamen juge que les mauvais résultats du #PS sont \"un sévère avertissement\" pour le gouvernement")
+L
+  .marker([
+ 48.881,
+2.3238 
+])
+  .addTo( map )
+  .bindPopup("La drôle soirée d'Hidalgo #Municipales2014 #Hidalgo #Paris")
+L
+  .marker([
+ 48.838,
+ 2.362 
+])
+  .addTo( map )
+  .bindPopup("Félicitations à tous mes amis Élus au 1er tour des Municipales#Municipales2014")
+L
+  .marker([
+ 48.845,
+2.3541 
+])
+  .addTo( map )
+  .bindPopup("RT@FGG72: #selfisoloir : des milliers d'électeurs s'immortalisent sur Twitter #Municipales2014")
+L
+  .marker([
+  48.87,
+2.3163 
+])
+  .addTo( map )
+  .bindPopup("#Municipales2014 On va vers une grosse taloche (...), prédisait un ténor de la majorité")
+L
+  .marker([
+  48.87,
+2.3163 
+])
+  .addTo( map )
+  .bindPopup("#Lyon Collomb en tête avec 46% des voix")
+L
+  .marker([
+  48.87,
+2.3163 
+])
+  .addTo( map )
+  .bindPopup("Pour le #PS, heureusement qu'il y a Paris")
+L
+  .marker([
+ 48.888,
+2.3618 
+])
+  .addTo( map )
+  .bindPopup("Ces mecs de Droite casseroles au cul, réélus ou en passe de l'être, je me dis que les électeurs ont de la merde dans les yeux. #Municipales")
+L
+  .marker([
+  48.87,
+2.3163 
+])
+  .addTo( map )
+  .bindPopup("Arrêtez tout, Nathalie Kosciusko-Morizet a vécu un moment de grâce")
+L
+  .marker([
+  48.87,
+2.3163 
+])
+  .addTo( map )
+  .bindPopup("Hénin-Beaumont : le FN gagne dès le premier tour")
+L
+  .marker([
+  48.87,
+2.3163 
+])
+  .addTo( map )
+  .bindPopup("A Marseille, scores catastrophiques pour Mennucci")
+L
+  .marker([
+ 48.876,
+ 2.344 
+])
+  .addTo( map )
+  .bindPopup("C'est bien les municipales pour savoir quelles villes sont infréquentables.")
+L
+  .marker([
+  48.83,
+2.3576 
+])
+  .addTo( map )
+  .bindPopup("Les municipales jpp, à tous les repas j'entends que ça, avec les résultats etc stooop it dude")
+L
+  .marker([
+ 48.835,
+ 2.348 
+])
+  .addTo( map )
+  .bindPopup("#municipales Le FN gagne Henin Beaumont. Et Balkany regagne Levallois. Certains dimanches d'élections s'accommodent mal avec la probité.")
+L
+  .marker([
+  48.83,
+2.3633 
+])
+  .addTo( map )
+  .bindPopup("@lemondefr: Municipales : le PS en position favorable pour conserver Paris La politique c'est la Mafia...")
+L
+  .marker([
+  48.83,
+2.3576 
+])
+  .addTo( map )
+  .bindPopup("Dès que j'passe dans mon salon ils me replongent tous dans la politique et les municipales, quelle horreur")
+L
+  .marker([
+ 48.835,
+ 2.348 
+])
+  .addTo( map )
+  .bindPopup("#municipales Les résultats du 1er tour diffus et illisibles trahissent le brouillard politique dans lequel les électeurs se perdent.")
+L
+  .marker([
+  48.87,
+2.3163 
+])
+  .addTo( map )
+  .bindPopup("Municipales à #Toulouse : l'UMP Moudenc devance le maire PS Cohen #Municipales2014")
+L
+  .marker([
+  48.87,
+2.3163 
+])
+  .addTo( map )
+  .bindPopup("Tous les résultats du premier tour des municipales, ville par ville")
+L
+  .marker([
+ 48.835,
+2.3265 
+])
+  .addTo( map )
+  .bindPopup("Petite pensée à #Valls qui attend la parution du Monde pour connaître les résultats des municipales #Paris2014 #Municipales2014")
+L
+  .marker([
+  48.87,
+2.3163 
+])
+  .addTo( map )
+  .bindPopup("Fillon : «Aucun désistement» et «aucune alliance» avec le FN #Municipales2014")
+L
+  .marker([
+ 48.891,
+2.3454 
+])
+  .addTo( map )
+  .bindPopup("Comptage consciencieux des bulletins dans les bureaux 5 et 6 du 18e # municipales #mun75018")
+L
+  .marker([
+  48.87,
+2.3163 
+])
+  .addTo( map )
+  .bindPopup("EN DIRECT Le #PS veut bloquer le FN. Pas Copé")
+L
+  .marker([
+ 48.875,
+2.3157 
+])
+  .addTo( map )
+  .bindPopup("C'est bon là ça parle des municipales et du foot j'crois j'vais partir j'me fais chier à mourir")
+L
+  .marker([
+ 48.829,
+2.3265 
+])
+  .addTo( map )
+  .bindPopup("!! RT @LeParisien_75 #NKM en tête face à #Hidlago à Paris selon les dernières estimations.")
+L
+  .marker([
+ 48.858,
+2.3683 
+])
+  .addTo( map )
+  .bindPopup("Pour tout savoir sur les municipales à Marseille, l'expert c'est @agindre !")
+L
+  .marker([
+ 48.882,
+2.3323 
+])
+  .addTo( map )
+  .bindPopup("Ok alors les meufs qui font genre elles regardent les élections municipales et critiquent ceux qui regardent le foot niquez vos mères")
+L
+  .marker([
+ 48.867,
+2.3177 
+])
+  .addTo( map )
+  .bindPopup("On vous attend à partir de 22h15 sur @parispremieretv pour un @Zenpp spécial municipales")
+L
+  .marker([
+  48.87,
+2.3163 
+])
+  .addTo( map )
+  .bindPopup("#Municipales2014 : la gauche en recul, le FN fait une percée ")
+L
+  .marker([
+ 48.882,
+2.3475 
+])
+  .addTo( map )
+  .bindPopup("Le #FN n'a pas honte d'avoir présenté de grand penseurs dans toutes ces municipalités ? #Municipales2014 #municipales")
+L
+  .marker([
+ 48.878,
+2.3628 
+])
+  .addTo( map )
+  .bindPopup("#LeFoll est véner ce soir ! Il l'a mauvaise ! #municipales")
+L
+  .marker([
+  48.84,
+2.3501 
+])
+  .addTo( map )
+  .bindPopup("Soirée électorale municipales 2014 et les types arrivent encore a ramener Sarkozy dans les débats. Champions du monde")
+L
+  .marker([
+ 48.871,
+ 2.349 
+])
+  .addTo( map )
+  .bindPopup("@patthomas: Municipales : La ville de Niort bascule à droite après près de 60 ans à gauche (sources mairie et PS - afp)")
+L
+  .marker([
+ 48.877,
+2.3252 
+])
+  .addTo( map )
+  .bindPopup("@PAULINE_GRN et il ne faut pas tirer d'enseignements nationaux des municipales,ça reste des élections à enjeux locaux #CirqueMédiatique :)")
+L
+  .marker([
+ 48.834,
+2.3688 
+])
+  .addTo( map )
+  .bindPopup("@lemonde_pol: Municipales : très forte poussée du FN, le PS en net recul")
+L
+  .marker([
+ 48.869,
+2.3793 
+])
+  .addTo( map )
+  .bindPopup("En voyant les résultats des élections municipales ya des villes je sais que je n'y mettrais jamais les pied #meaux #perpignan")
+L
+  .marker([
+ 48.878,
+2.3649 
+])
+  .addTo( map )
+  .bindPopup("Bientôt l'heure de dépouiller #Paris2014 #élections #municipales @ Ecole Élémentaire Eugène Varlin")
+L
+  .marker([
+  48.88,
+ 2.361 
+])
+  .addTo( map )
+  .bindPopup("Quelle chaîne ce soir pour la soirée #municipales ?")
+L
+  .marker([
+ 48.862,
+2.3523 
+])
+  .addTo( map )
+  .bindPopup("Dans la course au studio télé le plus hollywoodien pour les municipales, TF1 a manifestement cassé sa tirelire #newsplex")
+L
+  .marker([
+  48.87,
+2.3163 
+])
+  .addTo( map )
+  .bindPopup("Municipales : le taux de participation à 17 heures est de 54,7")
+L
+  .marker([
+  48.87,
+2.3163 
+])
+  .addTo( map )
+  .bindPopup("#Hollande : un Falcon pour aller voter ? Normal...")
+L
+  .marker([
+ 48.834,
+2.3687 
+])
+  .addTo( map )
+  .bindPopup("Grosse bande de cons ceux qui s'font mettre dans la tête que voter aux municipales ça sert a rien.. C'est exactement ça qu'ils cherchent..")
+L
+  .marker([
+ 48.825,
+2.3495 
+])
+  .addTo( map )
+  .bindPopup("#France : Participation à un vote local : les élections municipales. J'ai donc voté ! #paris #élection")
+L
+  .marker([
+ 48.857,
+2.3591 
+])
+  .addTo( map )
+  .bindPopup("Hojordhui Élections Municipales alors commo tous les France , il fo vote!!! @valtrier on grande admiration pur elle.")
+L
+  .marker([
+ 48.865,
+2.3487 
+])
+  .addTo( map )
+  .bindPopup("L'instant du choix... Ou pas !! #selfisoloir #municipales #paris @ École Maternelle Dussoubs")
+L
+  .marker([
+ 48.829,
+2.3698 
+])
+  .addTo( map )
+  .bindPopup("Franchement voter pour les municipales c quoi ça wesh je sais même pas qui c qui le maire du 13eme a l'heure qu'il est pq changer")
+L
+  .marker([
+  48.87,
+2.3163 
+])
+  .addTo( map )
+  .bindPopup("Une minute de silence pour les électeurs de 64 communes privés de #selfisoloir: aucun candidat ne s'y est présenté :(")
+L
+  .marker([
+ 48.885,
+2.3434 
+])
+  .addTo( map )
+  .bindPopup("Nous aussi on va à l'école le dimanche ! Poke @chocoladdict #elections #municipales #paris #montmartre")
+L
+  .marker([
+ 48.833,
+2.3267 
+])
+  .addTo( map )
+  .bindPopup("A voté! #paris #france #municipales #electionsmunicipales #democratie #vote @ Mairie du 14e")
+L
+  .marker([
+ 48.864,
+2.3689 
+])
+  .addTo( map )
+  .bindPopup("Quand Alliot traite une journaliste de pute par sms, directement envoyé à la journaliste..! via @humourdedroite")
+L
+  .marker([
+ 48.892,
+2.3444 
+])
+  .addTo( map )
+  .bindPopup("Voter est un droit et un devoir ! #municipales #paris2014 #18e #bourrezmoicetteurne @ Mairie du 18e")
+L
+  .marker([
+  48.83,
+2.3628 
+])
+  .addTo( map )
+  .bindPopup("C'est pour les élections municipales qui faut voté j'sais même pas ske c'est ça wallah j'vais pas voter")
+L
+  .marker([
+ 48.839,
+2.3511 
+])
+  .addTo( map )
+  .bindPopup("@tdunjour Le #selfie, une tendance populaire aux municipales néerlandaises #AFP")
+    
+    
+    
+    
+    if (spec.circle2){
+      for (var c in spec.circle2){
+        var circle = L.circle(c.center, c.radius, c.opts)
+         .addTo(map);
+      }
+    }
+    
+    
+    
+    
+    
+   
+   
+   
+</script>
+    
+  </body>
+</html>

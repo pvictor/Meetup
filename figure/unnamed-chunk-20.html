@@ -1,0 +1,270 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href='http://nvd3.org/src/nv.d3.css'>
+    
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js' type='text/javascript'></script>
+    <script src='http://d3js.org/d3.v3.min.js' type='text/javascript'></script>
+    <script src='http://timelyportfolio.github.io/rCharts_nvd3_tests/libraries/widgets/nvd3/js/nv.d3.min-new.js' type='text/javascript'></script>
+    <script src='http://nvd3.org/lib/fisheye.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }  
+    </style>
+    
+  </head>
+  <body>
+    <div id='chart38e01eb07286' class='rChart nvd3'></div>  
+    
+    <script type='text/javascript'>
+ $(document).ready(function(){
+      drawchart38e01eb07286()
+    });
+    function drawchart38e01eb07286(){  
+      var opts = {
+ "dom": "chart38e01eb07286",
+"width":    800,
+"height":    400,
+"x": "Var1",
+"y": "Freq",
+"group": "Mois",
+"type": "multiBarChart",
+"id": "chart38e01eb07286" 
+},
+        data = [
+ {
+ "Var1": "20Minutes",
+"Var2": "1",
+"Freq": 1216,
+"Mois": "Janvier" 
+},
+{
+ "Var1": "Challenges",
+"Var2": "1",
+"Freq": 929,
+"Mois": "Janvier" 
+},
+{
+ "Var1": "LeFigaro",
+"Var2": "1",
+"Freq": 2473,
+"Mois": "Janvier" 
+},
+{
+ "Var1": "LeGorafi",
+"Var2": "1",
+"Freq": 316,
+"Mois": "Janvier" 
+},
+{
+ "Var1": "LeMonde",
+"Var2": "1",
+"Freq": 1653,
+"Mois": "Janvier" 
+},
+{
+ "Var1": "LeParisien",
+"Var2": "1",
+"Freq": 1876,
+"Mois": "Janvier" 
+},
+{
+ "Var1": "LesEchos",
+"Var2": "1",
+"Freq": 2269,
+"Mois": "Janvier" 
+},
+{
+ "Var1": "Libe",
+"Var2": "1",
+"Freq": 1396,
+"Mois": "Janvier" 
+},
+{
+ "Var1": "Mediapart",
+"Var2": "1",
+"Freq": 806,
+"Mois": "Janvier" 
+},
+{
+ "Var1": "ValeursActuelles",
+"Var2": "1",
+"Freq": 608,
+"Mois": "Janvier" 
+},
+{
+ "Var1": "20Minutes",
+"Var2": "2",
+"Freq": 963,
+"Mois": "Fevrier" 
+},
+{
+ "Var1": "Challenges",
+"Var2": "2",
+"Freq": 898,
+"Mois": "Fevrier" 
+},
+{
+ "Var1": "LeFigaro",
+"Var2": "2",
+"Freq": 2647,
+"Mois": "Fevrier" 
+},
+{
+ "Var1": "LeGorafi",
+"Var2": "2",
+"Freq": 317,
+"Mois": "Fevrier" 
+},
+{
+ "Var1": "LeMonde",
+"Var2": "2",
+"Freq": 1784,
+"Mois": "Fevrier" 
+},
+{
+ "Var1": "LeParisien",
+"Var2": "2",
+"Freq": 1759,
+"Mois": "Fevrier" 
+},
+{
+ "Var1": "LesEchos",
+"Var2": "2",
+"Freq": 2367,
+"Mois": "Fevrier" 
+},
+{
+ "Var1": "Libe",
+"Var2": "2",
+"Freq": 1286,
+"Mois": "Fevrier" 
+},
+{
+ "Var1": "Mediapart",
+"Var2": "2",
+"Freq": 790,
+"Mois": "Fevrier" 
+},
+{
+ "Var1": "ValeursActuelles",
+"Var2": "2",
+"Freq": 613,
+"Mois": "Fevrier" 
+},
+{
+ "Var1": "20Minutes",
+"Var2": "3",
+"Freq": 1074,
+"Mois": "Mars" 
+},
+{
+ "Var1": "Challenges",
+"Var2": "3",
+"Freq": 818,
+"Mois": "Mars" 
+},
+{
+ "Var1": "LeFigaro",
+"Var2": "3",
+"Freq": 3277,
+"Mois": "Mars" 
+},
+{
+ "Var1": "LeGorafi",
+"Var2": "3",
+"Freq": 286,
+"Mois": "Mars" 
+},
+{
+ "Var1": "LeMonde",
+"Var2": "3",
+"Freq": 2185,
+"Mois": "Mars" 
+},
+{
+ "Var1": "LeParisien",
+"Var2": "3",
+"Freq": 1970,
+"Mois": "Mars" 
+},
+{
+ "Var1": "LesEchos",
+"Var2": "3",
+"Freq": 2527,
+"Mois": "Mars" 
+},
+{
+ "Var1": "Libe",
+"Var2": "3",
+"Freq": 2184,
+"Mois": "Mars" 
+},
+{
+ "Var1": "Mediapart",
+"Var2": "3",
+"Freq": 1335,
+"Mois": "Mars" 
+},
+{
+ "Var1": "ValeursActuelles",
+"Var2": "3",
+"Freq": 730,
+"Mois": "Mars" 
+} 
+]
+  
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus")) {
+        var data = d3.nest()
+          .key(function(d){
+            //return opts.group === undefined ? 'main' : d[opts.group]
+            //instead of main would think a better default is opts.x
+            return opts.group === undefined ? opts.y : d[opts.group];
+          })
+          .entries(data);
+      }
+      
+      if (opts.disabled != undefined){
+        data.map(function(d, i){
+          d.disabled = opts.disabled[i]
+        })
+      }
+      
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .x(function(d) { return d[opts.x] })
+          .y(function(d) { return d[opts.y] })
+          .width(opts.width)
+          .height(opts.height)
+         
+        chart
+  .reduceXTicks(false)
+          
+        chart.xAxis
+  .staggerLabels(true)
+
+        
+        
+        
+      
+       d3.select("#" + opts.id)
+        .append('svg')
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+    };
+</script>
+    
+  </body>
+</html>
